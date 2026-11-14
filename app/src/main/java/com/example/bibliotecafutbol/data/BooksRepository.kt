@@ -13,7 +13,6 @@ class NetworkBooksRepository(
         val bookIds = apiService.searchBooks(SEARCH_QUERY).items
             .orEmpty()
             .mapNotNull { it.id }
-            .take(MAX_BOOKS)
 
         val books = mutableListOf<Book>()
         for (bookId in bookIds) {
@@ -27,7 +26,6 @@ class NetworkBooksRepository(
     }
 
     private companion object {
-        const val SEARCH_QUERY = "football"
-        const val MAX_BOOKS = 20
+        const val SEARCH_QUERY = "soccer"
     }
 }

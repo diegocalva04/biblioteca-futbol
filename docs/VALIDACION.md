@@ -2,7 +2,7 @@
 
 ## Compilación y pruebas
 
-El 13 de noviembre de 2026 se ejecutó `gradlew testDebugUnitTest assembleDebug`. Gradle finalizó correctamente con `BUILD SUCCESSFUL`. La prueba `getBooksSearchesFootballAndLoadsEachVolumeSequentially` verificó la búsqueda con el término `football`, las consultas individuales en orden y la conversión de la miniatura de HTTP a HTTPS.
+El 13 de noviembre de 2026 se ejecutó `gradlew testDebugUnitTest assembleDebug`. Gradle finalizó correctamente con `BUILD SUCCESSFUL`. La prueba `getBooksSearchesSoccerAndLoadsEachVolumeSequentially` verificó la búsqueda con el término `soccer`, las consultas individuales en orden y la conversión de la miniatura de HTTP a HTTPS.
 
 ## Ejecución gráfica
 

@@ -6,13 +6,13 @@ import org.junit.Test
 
 class NetworkBooksRepositoryTest {
     @Test
-    fun getBooksSearchesFootballAndLoadsEachVolumeSequentially() = runBlocking {
+    fun getBooksSearchesSoccerAndLoadsEachVolumeSequentially() = runBlocking {
         val service = FakeBooksApiService()
         val repository = NetworkBooksRepository(service)
 
         val books = repository.getBooks()
 
-        assertEquals("football", service.requestedQuery)
+        assertEquals("soccer", service.requestedQuery)
         assertEquals(listOf("book-1", "book-2"), service.requestedIds)
         assertEquals(
             listOf(
